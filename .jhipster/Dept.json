@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230331001043",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "dept",
+  "fields": [
+    {
+      "fieldName": "deptName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deptAddress",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "name": "Dept",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
