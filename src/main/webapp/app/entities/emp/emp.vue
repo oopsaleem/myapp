@@ -22,7 +22,7 @@
       <table class="table table-striped" aria-describedby="emps">
         <thead>
           <tr>
-            <th scope="row"><span>ID</span></th>
+            <th scope="row"><span>Translation missing for global.field.id</span></th>
             <th scope="row"><span>First Name</span></th>
             <th scope="row"><span>Last Name</span></th>
             <th scope="row"></th>
@@ -40,13 +40,13 @@
                 <router-link :to="{ name: 'EmpView', params: { empId: emp.id } }" custom v-slot="{ navigate }">
                   <button @click="navigate" class="btn btn-info btn-sm details" data-cy="entityDetailsButton">
                     <font-awesome-icon icon="eye"></font-awesome-icon>
-                    <span class="d-none d-md-inline">View</span>
+                    <span class="d-none d-md-inline">Translation missing for entity.action.view</span>
                   </button>
                 </router-link>
                 <router-link :to="{ name: 'EmpEdit', params: { empId: emp.id } }" custom v-slot="{ navigate }">
                   <button @click="navigate" class="btn btn-primary btn-sm edit" data-cy="entityEditButton">
                     <font-awesome-icon icon="pencil-alt"></font-awesome-icon>
-                    <span class="d-none d-md-inline">Edit</span>
+                    <span class="d-none d-md-inline">Translation missing for entity.action.edit</span>
                   </button>
                 </router-link>
                 <b-button
@@ -57,7 +57,7 @@
                   v-b-modal.removeEntity
                 >
                   <font-awesome-icon icon="times"></font-awesome-icon>
-                  <span class="d-none d-md-inline">Delete</span>
+                  <span class="d-none d-md-inline">Translation missing for entity.action.delete</span>
                 </b-button>
               </div>
             </td>
@@ -67,14 +67,14 @@
     </div>
     <b-modal ref="removeEntity" id="removeEntity">
       <template #modal-title>
-        <span id="myappApp.emp.delete.question" data-cy="empDeleteDialogHeading">Confirm delete operation</span>
+        <span id="myappApp.emp.delete.question" data-cy="empDeleteDialogHeading">Translation missing for entity.delete.title</span>
       </template>
       <div class="modal-body">
         <p id="jhi-delete-emp-heading">Are you sure you want to delete Emp {{ removeId }}?</p>
       </div>
       <template #modal-footer>
         <div>
-          <button type="button" class="btn btn-secondary" v-on:click="closeDialog()">Cancel</button>
+          <button type="button" class="btn btn-secondary" v-on:click="closeDialog()">Translation missing for entity.action.cancel</button>
           <button
             type="button"
             class="btn btn-primary"
@@ -82,7 +82,7 @@
             data-cy="entityConfirmDeleteButton"
             v-on:click="removeEmp()"
           >
-            Delete
+            Translation missing for entity.action.delete
           </button>
         </div>
       </template>

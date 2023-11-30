@@ -157,11 +157,11 @@ describe('Emp e2e test', () => {
     });
 
     it('should create an instance of Emp', () => {
-      cy.get(`[data-cy="firstName"]`).type('Dora');
-      cy.get(`[data-cy="firstName"]`).should('have.value', 'Dora');
+      cy.get(`[data-cy="firstName"]`).type('Timothy');
+      cy.get(`[data-cy="firstName"]`).should('have.value', 'Timothy');
 
-      cy.get(`[data-cy="lastName"]`).type('Schultz');
-      cy.get(`[data-cy="lastName"]`).should('have.value', 'Schultz');
+      cy.get(`[data-cy="lastName"]`).type('Reynolds');
+      cy.get(`[data-cy="lastName"]`).should('have.value', 'Reynolds');
 
       cy.get(entityCreateSaveButtonSelector).click();
 

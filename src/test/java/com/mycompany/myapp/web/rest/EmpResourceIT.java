@@ -248,8 +248,6 @@ class EmpResourceIT {
         Emp partialUpdatedEmp = new Emp();
         partialUpdatedEmp.setId(emp.getId());
 
-        partialUpdatedEmp.firstName(UPDATED_FIRST_NAME).lastName(UPDATED_LAST_NAME);
-
         restEmpMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedEmp.getId())
@@ -262,8 +260,8 @@ class EmpResourceIT {
         List<Emp> empList = empRepository.findAll();
         assertThat(empList).hasSize(databaseSizeBeforeUpdate);
         Emp testEmp = empList.get(empList.size() - 1);
-        assertThat(testEmp.getFirstName()).isEqualTo(UPDATED_FIRST_NAME);
-        assertThat(testEmp.getLastName()).isEqualTo(UPDATED_LAST_NAME);
+        assertThat(testEmp.getFirstName()).isEqualTo(DEFAULT_FIRST_NAME);
+        assertThat(testEmp.getLastName()).isEqualTo(DEFAULT_LAST_NAME);
     }
 
     @Test

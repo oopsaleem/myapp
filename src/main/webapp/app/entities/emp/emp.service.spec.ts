@@ -107,7 +107,12 @@ describe('Service Tests', () => {
       });
 
       it('should partial update a Emp', async () => {
-        const patchObject = Object.assign({}, new Emp());
+        const patchObject = Object.assign(
+          {
+            firstName: 'BBBBBB',
+          },
+          new Emp(),
+        );
         const returnedFromService = Object.assign(patchObject, elemDefault);
 
         const expected = Object.assign({}, returnedFromService);
