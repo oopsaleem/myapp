@@ -1,5 +1,7 @@
 # myapp
 
+This app was generated to reproduce the [issue #24360](https://github.com/jhipster/generator-jhipster/issues/24360)
+
 This application was generated using JHipster 8.0.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.0.0](https://www.jhipster.tech/documentation-archive/v8.0.0).
 
 ## Project Structure
