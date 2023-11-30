@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "changelogDate": "20230331001043",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "emp",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "name": "Emp",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
